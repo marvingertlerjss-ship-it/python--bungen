@@ -1,5 +1,8 @@
 #Notenrechner
 
+from unicodedata import name
+
+
 def Notenrechnechner():
 
     Betrug = input("Hast du betrogen? (ja): ").lower() == "ja"
@@ -32,32 +35,22 @@ def Notenrechnechner():
     return
 
 
-def namensliste():
-    namen = []
+def namenerstellen():
+    namen = {}
     while True:
-        name = input("Gib einen Namen der du einer Note zuordnen willst (oder 'stop' zum Beenden): ")
-        if name.lower() == 'stop':
+        name = input("Gib den Namen des Schülers ein:")
+        if name == "stop":
             break
-        namen.append(name)
-        print("Notenberechnung für:", name)
-
-        Notenrechnechner()
-
+        note = Notenrechnechner()
+        namen[name] = note
     return namen
 
-def main():
-    print("Willkommen zum Notenrechner!")
-    print("Was möchtest du tun?")
-    print("1. Noten für eine Person berechnen")
-    print("2. Personen mit Note anzeigen")
-    wahl = input("Gib 1 oder 2 ein: ")
-    if wahl == '1':
-        Notenrechnechner()
-    elif wahl == '2':
-        namen = namensliste()
-        print("Namen der Personen, für die Noten berechnet wurden:")
-        for name in namen:
-            print(name)
+def namenliste(namen):
+    for name, note in namen.items():
+        print(name, "hat die Note", note)
+    return namenliste
 
-main()
-    
+def menu():
+ 
+
+menu()
