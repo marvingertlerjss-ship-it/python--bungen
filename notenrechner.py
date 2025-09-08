@@ -51,6 +51,7 @@ def namenliste(namen):
     return namenliste
 
 def menu():
- 
+    feqf = 10
+    
 
 menu()
