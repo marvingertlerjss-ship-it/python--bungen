@@ -2,7 +2,7 @@
 
 # Alle möglichen Notenstufen in einer Liste.
 # Listen = Sammlung von Werten in Reihenfolge.
-STUFEN = ["1.0", "1.7", "2.3", "3.0", "3.7", "5.0"]
+Noten = ["1.0", "1.7", "2.3", "3.0", "3.7", "5.0"]
 
 
 def note(points, late, cheated, bonus):
@@ -35,10 +35,10 @@ def note(points, late, cheated, bonus):
     # Absicherung: Index darf nicht kleiner als 0 oder größer als letzte Stufe sein
     if i < 0:
         i = 0
-    if i >= len(STUFEN):  # len(x) gibt die Länge zurück (hier: wie viele Noten in STUFEN sind)
-        i = len(STUFEN) - 1  # letzter Index = Länge - 1
+    if i >= len(Noten):  # len(x) gibt die Länge zurück (hier: wie viele Noten in Noten sind)
+        i = len(Noten) - 1  # letzter Index = Länge - 1
 
-    return STUFEN[i]
+    return Noten[i]
 
 
 def main():
