@@ -1,0 +1,37 @@
+{
+  "see": 50,
+  "sonne": 50.0,
+  "monat": 1,
+  "max_monate": 10,
+  "ended_by": null,
+  "teams": {
+    "A": {
+      "salt": null,
+      "pwd_hash": null,
+      "vorrat": 0,
+      "letztes_gebot": null
+    },
+    "B": {
+      "salt": null,
+      "pwd_hash": null,
+      "vorrat": 0,
+      "letztes_gebot": null
+    },
+    "C": {
+      "salt": null,
+      "pwd_hash": null,
+      "vorrat": 0,
+      "letztes_gebot": null
+    }
+  },
+  "gebote_offen": {
+    "A": null,
+    "B": null,
+    "C": null
+  },
+  "submitted_this_month": {
+    "A": false,
+    "B": false,
+    "C": false
+  }
+}
